@@ -22,11 +22,6 @@ body {
   display: block;
 }
 
-.logo {
-  max-width: 120px;
-  margin: 20px auto;
-}
-
 h1, h2 {
   letter-spacing: 1px;
 }
@@ -46,7 +41,7 @@ button:hover {
   background: #b71c1c;
 }
 
-input, select {
+input {
   padding: 10px;
   font-size: 16px;
   width: 80%;
@@ -73,8 +68,6 @@ input, select {
 
 <body>
 
-<img src="logo.png" class="logo">
-
 <!-- REGLAS -->
 <div class="screen active" id="rules">
   <h1>EL IMPOSTOR</h1>
@@ -93,23 +86,23 @@ input, select {
 
 <!-- CATEGORÍA -->
 <div class="screen" id="category">
-  <h2>CATEGORÍA</h2>
+  <h2>ELEGÍ CATEGORÍA</h2>
   <button onclick="startGame('futbol')">⚽ FÚTBOL</button>
   <button onclick="startGame('tv')">📺 TV ARGENTINA</button>
-  <button onclick="startGame('hogar')">🏠 COSAS DEL HOGAR</button>
+  <button onclick="startGame('hogar')">🏠 LA RIOJA</button>
   <button onclick="startGame('disney')">🐭 DISNEY</button>
   <button onclick="startGame('general')">🎲 GENERALES</button>
   <button onclick="startGame('picante')">🔥 +18 PICANTE</button>
 </div>
 
-<!-- PASAR -->
+<!-- PASAR TELÉFONO -->
 <div class="screen" id="pass">
   <h2 id="passText"></h2>
-  <p class="small">No seas chusma.</p>
+  <p class="small">Mirar ahora es de botón.</p>
   <button onclick="countdown()">PASAR AL SIGUIENTE JUGADOR</button>
 </div>
 
-<!-- CUENTA -->
+<!-- CUENTA REGRESIVA -->
 <div class="screen" id="count">
   <h2>PREPARATE…</h2>
   <div id="countNum" class="word"></div>
@@ -125,7 +118,7 @@ input, select {
 <div class="screen" id="end">
   <h2>FIN DEL JUEGO</h2>
   <p>¿Qué pasó?</p>
-  <button onclick="alert('El impostor ganó. Vergüenza ajena.')">GANÓ EL IMPOSTOR</button>
+  <button onclick="alert('Ganó el impostor. Vergüenza ajena.')">GANÓ EL IMPOSTOR</button>
   <button onclick="alert('Bien ahí. Alguien paga algo.')">ENCONTRARON AL IMPOSTOR</button>
   <button onclick="location.reload()">JUGAR DE NUEVO</button>
 </div>
@@ -149,9 +142,9 @@ const words = {
     "Samanta Farjat","Alfa GH","Beto Casella","Yanina Latorre","Marley","Cacho Castaña"
   ],
   hogar: [
-    "Escoba","Heladera","Microondas","Cuchillo","Sillón","Almohada","Ventilador",
-    "Plancha","Tender","Espejo","Vaso","Plato","Tenedor","Sartén","Cafetera",
-    "Licuadora","Toalla","Cepillo","Mesa","Silla"
+    "EL CHACHO","CHILECITO","QUINTELA","MENEM","BACHES","CHAYA","EL DIQUE",
+    "PARQUE DE LA CIUDAD","LOS HUEVOS DEL CABALLO","UNLAR","ACEITUNA","FACUNDO QUIROGA","GORRIADOS","PARQUE EOLICO","CORRUPCION",
+    "CALLES SUCIAS","JOSHO PORTUGAL","ARMANDO MOLINA"
   ],
   disney: [
     "Mickey","Minnie","Goofy","Donald","Simba","Scar","Elsa","Anna","Buzz","Woody"
@@ -162,11 +155,11 @@ const words = {
     "Frío","Domingo"
   ],
   picante: [
-    "Lencería","Besos intensos","Roleplay","Aceite corporal","Esposas",
-    "Juguete íntimo","Strip tease","Masaje lento","Ducha compartida",
-    "Mordidas","Susurros","Cama desordenada","Miradas incómodas",
-    "Tacones","Camisa abierta","Juego previo","Luces bajas",
-    "Sábanas","Perfume","Prohibido"
+    "el 69","clitoris","beso negro","primera vez","Esposas",
+    "consolador","esperma","lluvia dorada","por el *",
+    "culiar","infiel","tragar","escupir",
+    "garganta profunda","orgasmo","orgia","payasito",
+    "de perrito","cinturonga","concha"
   ]
 };
 
